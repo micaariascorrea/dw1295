@@ -1,0 +1,11 @@
+@for $i from 1 through 2{
+    @if $i % 2{
+        h#{$i} {color: red}
+    } @else {
+        h#{$i} {color: blue}
+    }
+}
+$colors:(
+    blue
+    red
+);
