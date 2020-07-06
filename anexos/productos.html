@@ -12,7 +12,8 @@
 	<script src="http://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-	<link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+	<link href="productos/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css'/>
+	<script src="productos/jquery.min.js"></script>
 	<link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -40,222 +41,199 @@
 	<br>
 	<div>
 	<section>
-		<a href="tablaindex.html"  class="refh2">PRODUCTOS • E S T R E L L A S •</a>
+			<h1 id="resaltar">Con vos en cada temporada</h1>
 	</section>
 	</div>
-	<section>
-		<h1 id="resaltar">• Marcas clásicas y de tendencia nos acompañan desde el comienzo •</h1>
-	</section>
-	<section>
-		<h2 class="titulos-secundarios">Remeras</h2>
-		<ul>
-			<div>
-			<li><a class="new-arrivals">Remera Love</a></li>
-				<li><img width="90" src="imagenes/remera.jpg"></li>
-			<label for="color">Colores</label>
-			<select name="Colores" id="color">
-				<option selected disabled>Seleccione un color</option>
-				<option>Celeste</option>
-				<option>Blanco</option>
-				<option>Negro</option><br>
-			</select>
-			<button type="submit">COMPRAR</button>
-			<br>
+
+	<!--content-->
+<div class="products">
+	<div class="container">
+		<h2>Products</h2>
+		<div class="col-md-9">
+			<div class="content-top1">
+				<div class="col-md-4 col-md4">
+					<div class="col-md1">
+						<a href="single.html">
+							<img class="img-responsive" src="images/pi.png" alt=""/>
+						</a>
+						<h3><a href="single.html">Remera Rayo</a></h3>
+						<img width="90" src="imagenes/remera.jpg">
+						<h5>$520</h5>
+						<label for="color">Colores</label>
+						<select name="Colores" id="color">
+							<option selected disabled>Seleccione un color</option>
+							<option>Celeste</option>
+							<option>Blanco</option>
+							<option>Negro</option><br>
+						</select>
+						<div class="clearfix"> </div>
+						<button type="submit">COMPRAR</button>
+					</div>
+				</div>
+			
+				<div class="col-md-4 col-md4">
+					<div class="col-md1">
+						<a href="single.html">
+							<img class="img-responsive" src="images/pi2.png" alt=""/>
+						</a>
+						<h3><a href="single.html">Remera Alas</a></h3>
+						<img width="100" src="imagenes/remera2.jpg">
+						<h5>$600</h5>
+						<label for="color">Colores</label>
+						<select name="Colores" id="color">
+							<option selected disabled>Seleccione un color</option>
+							<option>Blanco</option>
+							<option>Negro</option><br>
+						</select>
+						<button type="submit">COMPRAR</button>	
+					</div>
+				</div>	
+			<div class="col-md-4 col-md4">
+					<div class="col-md1">
+						<a href="single.html">
+							<img class="img-responsive" src="images/pi4.png" alt=""/>
+						</a>
+						<h3><a href="single.html">Remera Tipa</a></h3>
+						<img width="100" src="imagenes/remera3.jpg">
+						<h5>$520</h5>
+						<label for="color">Colores</label>
+						<select name="Colores" id="color">
+							<option selected disabled>Seleccione un color</option>
+							<option>Verde</option>
+							<option>Blanco</option>
+							<option>Negro</option><br>
+						</select>
+						<button type="submit">COMPRAR</button>
+					</div>
+			</div>	
+			
+			<div class="clearfix"> </div>
+			<div class="content-top1">
+				<div class="col-md-4 col-md4">
+					<div class="col-md1">
+						<a href="single.html">
+							<img class="img-responsive" src="images/pi1.png" alt=""/>
+						</a>
+						<h3><a href="single.html">Jean Taverniti</a></h3>
+						<img width="100" src="imagenes/jean.jpg">
+						<h5>$990</h5>
+						<label for="talle">Talles</label>
+						<select name="talles" id="talle">
+							<option selected disabled>Seleccione un talle</option>
+							<option>32</option>
+							<option>38</option>
+							<option>42</option><br>
+						</select>
+						<button type="submit">COMPRAR</button>
+					</div>
+				</div>
+
+			<div class="col-md-4 col-md4">
+					<div class="col-md1">
+						<a href="single.html">
+							<img class="img-responsive" src="images/pi3.png" alt=""/>
+						</a>
+						<h3><a href="single.html">Jean Taverniti Cel</a></h3>
+						<img width="100" src="imagenes/jean2.jpg">
+						<h5>$1.300</h5>
+						<label for="talle">Talles</label>
+						<select name="talles" id="talle">
+							<option selected disabled>Seleccione un talle</option>
+							<option>38</option>
+							<option>40</option>
+							<option>42</option><br>
+						</select>
+						<button type="submit">COMPRAR</button>	
+					</div>
+			</div>
+
+			<div class="col-md-4 col-md4">
+					<div class="col-md1">
+						<a href="single.html">
+							<img class="img-responsive" src="images/pi12.png" alt=""/>
+						</a>
+						<h3><a href="single.html">Jean Taverniti Light</a></h3>
+						<img width="100" src="imagenes/jean3.jpg">
+						<h5>$1.250</h5>
+						<label for="talle">Talles</label>
+						<select name="talles" id="talle">
+							<option selected disabled>Seleccione un talle</option>
+							<option>32</option>
+							<option>38</option>
+							<option>42</option><br>
+						</select>
+						<button type="submit">COMPRAR</button><br>
+					</div>
 			</div>
 			
-			<div><br>
-			<li><a>Remera Alas</a></li>
-				<li><img width="100" src="imagenes/remera2.jpg"></li>
-			<label for="color">Colores</label>
-			<select name="Colores" id="color">
-				<option selected disabled>Seleccione un color</option>
-				<option>Blanco</option>
-				<option>Negro</option><br>
-			</select>
-			<button type="submit">COMPRAR</button>
-			<br>
-			</div>
-			<div><br>
-			<li><a class="new-arrivals">Remera TIPA</a></li>
-				<li><img width="100" src="imagenes/remera3.jpg"></li>
-			<label for="color">Colores</label>
-			<select name="Colores" id="color">
-				<option selected disabled>Seleccione un color</option>
-				<option>Verde</option>
-				<option>Blanco</option>
-				<option>Negro</option><br>
-			</select>
-			<button type="submit">COMPRAR</button>
-			<br>
-			</div>
-		</ul>
-	</section> <br>
-	<section>
-		<h2>Abrigos</h2>
-		<ul>
-			<div>
-			<li><a class="new-arrivals">Saco Utzzia</a></li>
-				<li><img width="100" src="imagenes/abrigo.jpg"></li>
-			<label for="color">Colores</label>
-			<select name="Colores" id="color">
-				<option selected disabled>Seleccione un color</option>
-				<option>Rosa</option>
-				<option>Amarillo</option><br>
-			</select>
-			<button type="submit">COMPRAR</button>
-			</div><br>
-			<div>
-			<li><a class="new-arrivals">Buzo Nirvana</a></li>
-				<li><img width="90" src="imagenes/abrigo2.jpg"></li>
-			<label for="color">Colores</label>
-			<select name="Colores" id="color">
-				<option selected disabled>Seleccione un color</option>
-				<option>Morado</option>
-				<option>Azul</option>
-				<option>Negro</option><br>
-			</select>
-			<button type="submit">COMPRAR</button>
-			</div><br>	
-			<div>
-			<li><a class="new-arrivals">Buzo Estrellas</a></li>
-				<li><img width="100" src="imagenes/abrigo3.jpg"></li>
-			<label for="color">Colores</label>
-			<select name="Colores" id="color">
-				<option selected disabled>Seleccione un color</option>
-				<option>Gris</option>
-				<option>Mostaza</option>
-				<option>Negro</option><br>
-			</select>
-			<button type="submit">COMPRAR</button>
-			</div><br>
-		</ul>
-	</section> <br>
-		
-	<section>
-		<h2>Jeans</h2>
-		<ul>
-			<div>
-			<li><a class="new-arrivals">Jean Taverniti</a></li>
-				<li><img width="100" src="imagenes/jean.jpg"></li>
-			<label for="talle">Talles</label>
-			<select name="talles" id="talle">
-				<option selected disabled>Seleccione un talle</option>
-				<option>32</option>
-				<option>38</option>
-				<option>42</option><br>
-			</select>
-			<button type="submit">COMPRAR</button>
-			</div><br>
-			<div>
-			<li><a class="new-arrivals">Jean Taverniti Cel</a></li>
-				<li><img width="100" src="imagenes/jean2.jpg"></li>
-			<label for="talle">Talles</label>
-			<select name="talles" id="talle">
-				<option selected disabled>Seleccione un talle</option>
-				<option>38</option>
-				<option>40</option>
-				<option>42</option><br>
-			</select>
-			<button type="submit">COMPRAR</button>
-			</div><br>
-			<div>
-			<li><a class="new-arrivals">Jean Taverniti Light</a></li>
-				<li><img width="100" src="imagenes/jean3.jpg"></li>
-			<label for="talle">Talles</label>
-			<select name="talles" id="talle">
-				<option selected disabled>Seleccione un talle</option>
-				<option>32</option>
-				<option>38</option>
-				<option>42</option><br>
-			</select>
-			<button type="submit">COMPRAR</button><br>
-			</div><br>
-		</ul>
-	</section> <br>
+			<div class="clearfix"> </div>
+			</div>	
+			<div class="content-top1">
+				<div class="col-md-4 col-md4">
+					<div class="col-md1">
+						<a href="single.html">
+							<img class="img-responsive" src="images/pi9.png" alt=""/>
+						</a>
+						<h3><a href="single.html">Zapatillas Dor</a></h3>
+						<img width="180" src="imagenes/zapatos.jpg">
+						<h5>$300</h5>
+						<label for="numero">Número</label>
+						<select name="Número" id="numero">
+							<option selected disabled>Seleccione un número</option>
+							<option>35</option>
+							<option>37</option>
+							<option>38</option><br>
+						</select>
+						<button type="submit">COMPRAR</button><br>
+					</div>
+				</div>
 
-	<section>
-		<h2>Zapatos</h2>
-		<ul>
-			<div>
-			<li><a class="new-arrivals">Zapatillas Dor</a></li>
-				<li><img width="180" src="imagenes/zapatos.jpg"></li>
-			<label for="n°">Número</label>
-			<select name="n°" id="n°">
-				<option selected disabled>Seleccione un número</option>
-				<option>35</option>
-				<option>37</option>
-				<option>38</option><br>
-			</select>
-			<button type="submit">COMPRAR</button><br>
-			</div><br>
-			<div>
-			<li><a class="new-arrivals">Zapatos PAMUK</a></li>
-				<li><img width="100" src="imagenes/zapatos2.jpg"></li>
-			<label for="n°">Número</label>
-			<select name="n°" id="n°">
-				<option selected disabled>Seleccione un número</option>
-				<option>36</option><br>
-			</select>
-			<button type="submit">COMPRAR</button><br>
-			</div><br>
-			<div>
-			<li><a class="new-arrivals">Sandalias PAMUK</a></li>
-				<li><img width="100" src="imagenes/zapatos3.jpg"></li>
-			<label for="n°">Número</label>
-			<select name="n°" id="n°">
-				<option selected disabled>Seleccione un número</option>
-				<option>35</option>
-				<option>36</option>
-				<option>37.5</option><br>
-			</select>
-			<button type="submit">COMPRAR</button><br>
+			<div class="col-md-4 col-md4">
+					<div class="col-md1">
+						<a href="single.html">
+							<img class="img-responsive" src="images/pi11.png" alt=""/>
+						</a>
+						<h3><a href="single.html">Zapatos PAMUK</a></h3>
+						<img width="100" src="imagenes/zapatos2.jpg">
+						<h5>$2000</h5>
+						<label for="numero">Número</label>
+						<select name="numero" id="numero">
+							<option selected disabled>Seleccione un número</option>
+							<option>36</option><br>
+						</select>
+						<button type="submit">COMPRAR</button><br>
+					</div><br>
 			</div>
-		</ul>
-	</section> <br>
 
-	<section>
-		<h2>Accesorios</h2>
-		<ul>
-			<div>
-			<li><a class="new-arrivals">Mochila Miss Chaucha - Negra</a></li>
-				<li><img width="100" src="imagenes/mochila.jpg"></li>
-			<button type="submit">COMPRAR</button><br>
-			</div><br>
-			<div>
-			<li><a class="new-arrivals">Mochila Santa Clara basic</a></li>
-				<li><img width="100" src="imagenes/mochila2.jpg"></li>
-			<label for="colores">Color</label>
-			<select name="colores" id="colores">
-				<option selected disabled>Seleccione un color</option>
-				<option>Amarillo</option>
-				<option>Nude</option>
-				<option>Negro</option><br>
-			</select>
-			<button type="submit">COMPRAR</button><br>
-			</div><br>
-			<div>
-			<li><a class="new-arrivals">Mochila Santa Clara Chic</a></li>
-				<li><img width="130" src="imagenes/mochila3.jpg"></li>
-			<label for="colores">Color</label>
-			<select name="colores" id="colores">
-				<option selected disabled>Seleccione un color</option>
-				<option>Naranja</option>
-				<option>Negro</option>
-				<option>Violeta</option><br>
-			</select>
-			<button type="submit">COMPRAR</button><br>
-			</div>
-		</ul>
-	</section>
+			<div class="col-md-4 col-md4">
+					<div class="col-md1">
+						<a href="single.html">
+							<img class="img-responsive" src="images/pi10.png" alt=""/>
+						</a>
+						<h3><a href="single.html">Sandalias PAMU</a></h3>
+						<img width="100" src="imagenes/zapatos3.jpg">
+						<h5>$2000</h5>
+						<label for="n°">Número</label>
+						<select name="n°" id="n°">
+							<option selected disabled>Seleccione un número</option>
+							<option>35</option>
+							<option>36</option>
+							<option>37.5</option><br>
+						</select>
+						<button type="submit">COMPRAR</button><br>
+					</div>
+		</div>
+
 	<br>
 	<section class="mi-estilo">
-        <a href=" https://wa.me/542932477794" style="color:#000000;"> <img width="20" src="imagenes/wsp.png"> WhatsApp</a>
-		<a href="https://www.facebook.com/delapazlocal/?ref=br_rs" style="color:#000000;"> <img width="20" src="imagenes/facebook.png"> Facebook</a>
-		<a href="https://www.instagram.com/delapazlocal/?fbclid=IwAR13Axt0rXhA5rZDdwApbEOw3S2mSx7Jk6om1jDY_ezWK8quAl3n5RZZ9ME" style="color:#000000;"> <img width="20" src="imagenes/instagram2.png"> Instagram</a>
-	</section> <br>
+		<a href="https://wa.me/542932477794" style="color:#000000;" class="refh2"> <img width="20" src="imagenes/wsp.png"> WhatsApp</a>
+		<a href="https://www.facebook.com/delapazlocal/?ref=br_rs" style="color:#000000;" class="refh2"> <img width="20" src="imagenes/facebook.png" id="icon-footer"> Facebook</a>
+		<a href="https://www.instagram.com/delapazlocal/?fbclid=IwAR13Axt0rXhA5rZDdwApbEOw3S2mSx7Jk6om1jDY_ezWK8quAl3n5RZZ9ME" style="color:#000000;" class="refh2"> <img width="20" src="imagenes/instagram2.png" id="icon-footer"> Instagram</a>
+<br>
 	<section>
-		<footer class="footer">| Bernardo de Irigoyen 89, Punta Alta - Cnel Rosales |</footer>
-		<footer class="footer">Copyright © Todos los derechos reservados 2020</footer>
-	</section>	
+		<footer class="footer">| Bernardo de Irigoyen 89, Punta Alta - Cnel Rosales | delapaz@delapaz.com |</footer>
+		<footer class="footer">Copyright © De La Paz - Todos los derechos reservados 2020</footer>
+	</section>
+	</main>
 </body>
 </html>

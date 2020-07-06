@@ -4,54 +4,43 @@ body {
 	background-image:none;
 	font-family: "Nunito",sans-serif;
 	}
-
-	/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
 /* Carousel base class */
 .carousel {
 	margin-top: 2rem;
 	margin-bottom: 4rem;
-}
+  }
   /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
 	bottom: 3rem;
 	z-index: 10;
-}
+  }
   
   /* Declare heights because of positioning of img element */
 .carousel-item {
 	height: 32rem;
-}
+  }
 .carousel-item > img {
 	position: absolute;
 	top: 0;
 	left: 0;
 	min-width: 100%;
 	height: 32rem;
-}
-  
-  
-  /* MARKETING CONTENT
-  -------------------------------------------------- */
-  
-  /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-	margin-bottom: 1.5rem;
-	text-align: center;
-}
-.marketing h2 {
-	font-weight: 400;
-}
-.marketing .col-lg-4 p {
-	margin-right: .75rem;
-	margin-left: .75rem;
-}
-  
-  
-  /* Featurettes
-  ------------------------- */
-  
+  }
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+	/* Bump up size of carousel content */
+	.carousel-caption p {
+	  margin-bottom: 1.25rem;
+	  font-size: 1.25rem;
+	  line-height: 1.4;
+	}
+
+/* Featurettes
+------------------------- */
+
 .featurette-divider {
 	margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
@@ -63,28 +52,17 @@ body {
 	letter-spacing: -.05rem;
 }
   
-  
-  /* RESPONSIVE CSS
-  -------------------------------------------------- */
-  
-@media (min-width: 40em) {
-	/* Bump up size of carousel content */
-.carousel-caption p {
-	  margin-bottom: 1.25rem;
-	  font-size: 1.25rem;
-	  line-height: 1.4;
-}
-  
 .featurette-heading {
-	  font-size: 50px;
-	}
+    font-size: 50px;
+  }
 }
-  
+
 @media (min-width: 62em) {
-	.featurette-heading {
-	  margin-top: 7rem;
-	}
+  .featurette-heading {
+    margin-top: 7rem;
+  }
 }
+
 
 .animacion{
 	color: black;
@@ -104,60 +82,120 @@ p strong {
 	font-weight: bold;
 	font-style: italic;
 }
-#resaltar{
+
+.tittle-import {
 	font-family:"Indie Flower", cursive;
-	word-break: inherit;
-	font-weight: 100;
+	font-size: 150px;
 }
-.titulos-secundarios {
-	font-family:"Indie Flower", cursive;
-}
-.new-arrivals {
+
+.tittle-second {
 	font-family:"Indie Flower", cursive;
 	font-style: italic;
 	font-weight: bold;
-	background-color:rgba(250, 203, 210, 0.459);
+	font-size: 50px;
 }
 
-#container-products{
-	display: inline-block;
-	width: 100%;
-	height: 250px;
-	grid-template-areas: "head head"
-						 "nav  main"
-						 "main main";
-	grid-template-rows: 50px 1fr 30px;
-	grid-template-columns: 150px 1fr;
-}
-
-#container-products .products1{
-	grid-area: head;
-  	background-color: #f0c6c6;
-  	grid-column-start: 1;
-	grid-column-end:2;
-}
-
-#container-products .products2{
-	grid-area: nav;
-  	background-color: #f0c6c6;
-  	grid-column-start: 2;
-	grid-column-end:3;
-}
-
-#container-products .products3{
-	grid-area: main;
-  	background-color: #f0c6c6;
-  	grid-column-start: 3;
-	grid-column-end:4;
+#resaltar{
+	font-family:"Indie Flower", cursive;
+	font-size: 60px;
+	margin-top: 4rem;
 }
 
 .refh2{
-	font-family: "Nunito",sans-serif;
+	font-family:"Indie Flower", cursive;
 	font-style: italic;
+	font-size: 20px;
+	font-weight: bold;
 }
 
-.mi-estilo{
-	text-align: center;
+#icon-footer{
+	margin-left: 2rem;
+}
+
+/*--PRODUCTOS--*/
+.content-top h1{
+	color:#010101;
+	font-size: 3em;
+	font-family:"Indie Flower", cursive;
+  text-align: center;
+}
+.col-md1 img{
+	margin: 0 auto;
+}
+.col-md1 h3 {
+    font-size: 1.1em;
+    line-height: 1.1em;
+    text-align: center;
+    margin: 1em 0 0.7em;
+    color: #000;
+}
+.col-md1 h3 a {
+    color:rgb(8, 4, 5);
+    text-decoration: none;
+    font-family: 'Poiret One', cursive;
+    font-weight: 700;
+    text-align: center;
+}
+.price h5 {
+    color: #000;
+    font-size: 1.2em;
+    margin: 14px 0;
+}
+.price {
+    text-align: center;
+}
+.price a {
+    color: #FFF;
+    font-size: 0.8em;
+    display: block;
+    background-color: #ffffff;
+    padding: 0.3em 0.6em;
+    border-radius: 3px;
+    text-decoration: none;
+    width: 43%;
+    margin: 0 auto;
+}
+.content-top {
+  padding: 4em 0;
+}
+.content-top1 {
+  padding: 1em 0;
+}
+.col-md1 {
+    padding: 1em;
+    background-color: #eee;
+}
+
+.col-md1:hover .price a {
+  background-color:rgb(8, 4, 5);
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+.content-top h4 {
+    color: #000;
+    font-size: 2em;
+    margin: 0;
+}
+.content-top p {
+    font-size: 1em;
+    color: #ffffff;
+    line-height: 1.8em;
+    margin: 2em 0;
+}
+.col-md3 {
+    text-align: center;
+}
+.col-md3 {
+    background: url(../images/11.jpg) no-repeat;
+    min-height: 399px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
 }
 
 .footer{
