@@ -12,7 +12,11 @@
 	<script src="http://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="assets/dist/js/bootstrap.bundle.js"></script>
 	<link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,45 +35,48 @@
 				<a class="nav-link" href="anexos/productos.html">Productos</a>
 			  </li>
 			  <li class="nav-item">
-				<a class="nav-link disabled" href="anexos/contacto.html" tabindex="-1" aria-disabled="true">Contacto</a>
+				<a class="nav-link" href="anexos/contacto.html">Contacto</a>
 			  </li>
 			</ul>
 		  </div>
 		</nav>
 	</header>
 	<br>
-	<!--Carousel-->
 	<main role="main">
+
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		  <ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 			<li data-target="#myCarousel" data-slide-to="1"></li>
 			<li data-target="#myCarousel" data-slide-to="2"></li>
 		  </ol>
-		  <div class="carousel-inner">
-			<div class="carousel-item active">
-			  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="pink"/></svg>
+		<div class="carousel-inner">
+		   <div class="carousel-item active">
+			  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+			  <img src="anexos/imagenes/bla1.jpg" alt="local">
 			  <div class="container">
-				<div class="carousel-caption text-left">
-				  <h1>Nosotros.</h1>
+				  <div class="carousel-caption text-left" d-none d-md-block>
+					<h1>Un lugar pensado para vos</h1>
+				 </div>
+			  </div>
+		   </div>
+		   <div class="carousel-item">
+			  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+			  <img src="anexos/imagenes/pant11.jpg" alt="local"> 
+			  <div class="container">
+				<div class="carousel-caption" d-none d-md-block>
+				  <h1>New Arrivals</h1>
+				  <p>Marcas clásicas y de tendencia nos acompañan desde el comienzo</p>
 				</div>
 			  </div>
 			</div>
 			<div class="carousel-item">
-			  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="pink"/></svg>
+			  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+			  <img src="anexos/imagenes/campera22.jpg" alt="local">
 			  <div class="container">
-				<div class="carousel-caption">
-				  <h1>Another example headline.</h1>
-				</div>
-			  </div>
-			</div>
-			<div class="carousel-item">
-			  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="pink"/></svg>
-			  <div class="container">
-				<div class="carousel-caption text-right">
-				  <h1>One more for good measure.</h1>
-				  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-				  <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+				<div class="carousel-caption text-right" d-none d-md-block>
+				  <h1>Envíos a todo el país</h1>
+				  <p>Llegamos a todo el país con nuestros productos</p>
 				</div>
 			  </div>
 			</div>
@@ -81,43 +88,60 @@
 		  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
 			<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			<span class="sr-only">Next</span>
-		  </a> 
+		  </a>
 		</div>
 	<section>
-		<h1>• Un espacio creado para vos •</h1>	
-		<h2 class="titulos-secundarios">Productos que van con vos en cada temporada</h2>
-		
-		<br>
-		<a class="new-arrivals" href="tablaindex.html" style="color:#000000;">Mirá nuestros productos estrellas</a>	
+		<h1 class="tittle-import">De La Paz</h1>
 	</section>
-	<div>
-	<br>
-	<section>
-		<p class="refh2">Nuestro local...♥</p>
-		<div class="contenedor">
-			<img width="200" src="anexos/imagenes/local1.jpg" class="a">
-			<img width="200" src="anexos/imagenes/local2.jpg" class="b">
-			<img width="200" src="anexos/imagenes/local3.jpg" class="c">
-		</div>
-	</section>
-	</div>
-	<br>
-	<section>
-		<h3>Variedad de talles</h3>
+	
+	<hr class="featurette-divider">
 
-		<p>Calidad y buen precio son <strong>prioridades</strong> en DE LA PAZ</p>
-	</section>
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 id="resaltar">Nuestro local... ♥</h2>
+        <p class="lead">Un espacio pensado para vos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa expedita veritatis cum reprehenderit voluptatem sapiente ipsum autem quidem, libero accusamus vel ullam iure obcaecati delectus aliquam nihil nemo ducimus amet minima quaerat unde quibusdam officiis ab. Incidunt reiciendis animi ab?</p>
+      </div>
+      <div class="col-md-5">
+		<img src="anexos/imagenes/local11.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+	  </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 id="resaltar">Nosotros</h2>
+        <p class="lead">Hace 6 años comenzamos a hacer realidad un sueño... Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab ipsam repudiandae quisquam quia autem voluptatum similique harum, porro magni obcaecati veritatis voluptatem maiores tenetur at quidem. Pariatur, magnam. Sunt?</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+		<img src="anexos/imagenes/nosotrospro.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+      </div>
+    </div>
+	<br>
+
+	<hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 id="resaltar">Un espacio pensado para vos</h2>
+        <p class="lead">Calidad y buen precio son <strong>prioridades</strong> en De La Paz. Trabajamos con marcas clásicas y de tendencia para acompañarte en cada temporada. Tenemos siempre <strong>variedad de talles</strong>, todos los medios de pago para tu comodidad y también hacemos envíos a todo el país!</p>
+      </div>
+      <div class="col-md-5">
+		<img src="anexos/imagenes/nosotros.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">	
+	
 	<section>
-		<h2 class="titulos-secundarios"><span>• Queremos conocerte y que nos conozcas •</span></h2>
-		<p>Hacemos envíos a todo el país!</p>
-		<button type="button" class="btn btn-primary">CONTACTAR</button>
+		<h2 class="tittle-second">Visitanos !</h2>
 <br>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.82261884366!2d-62.08410768465003!3d-38.88229997957305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ed9d5a0e577d0b%3A0xc2f0a3c2a997d205!2sBernardo%20de%20Irigoyen%2089%2C%20B8109%20Punta%20Alta%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1587924706383!5m2!1ses!2sar" width="270" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> <br>
-		<p>Local en Bdo. de Irigoyen 89, Punta Alta.</p>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.82261884366!2d-62.08410768465003!3d-38.88229997957305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ed9d5a0e577d0b%3A0xc2f0a3c2a997d205!2sBernardo%20de%20Irigoyen%2089%2C%20B8109%20Punta%20Alta%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1587924706383!5m2!1ses!2sar" width="400px" height="350px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> <br>
+		<p>Local en Bernardo de Irigoyen 89, Punta Alta - Coronel Rosales.</p>
 		<section class="mi-estilo">
-		<a href=" https://wa.me/542932477794" style="color:#000000;"> <img width="20" src="anexos/imagenes/wsp.png"> WhatsApp</a>
-		<a href="https://www.facebook.com/delapazlocal/?ref=br_rs" style="color:#000000;"> <img width="20" src="anexos/imagenes/facebook.png"> Facebook</a>
-		<a href="https://www.instagram.com/delapazlocal/?fbclid=IwAR13Axt0rXhA5rZDdwApbEOw3S2mSx7Jk6om1jDY_ezWK8quAl3n5RZZ9ME" style="color:#000000;"> <img width="20" src="anexos/imagenes/instagram2.png"> Instagram</a>
+		<a href="https://wa.me/542932477794" style="color:#000000;" class="refh2"> <img width="20" src="anexos/imagenes/wsp.png"> WhatsApp</a>
+		<a href="https://www.facebook.com/delapazlocal/?ref=br_rs" style="color:#000000;" class="refh2"> <img width="20" src="anexos/imagenes/facebook.png" id="icon-footer"> Facebook</a>
+		<a href="https://www.instagram.com/delapazlocal/?fbclid=IwAR13Axt0rXhA5rZDdwApbEOw3S2mSx7Jk6om1jDY_ezWK8quAl3n5RZZ9ME" style="color:#000000;" class="refh2"> <img width="20" src="anexos/imagenes/instagram2.png" id="icon-footer"> Instagram</a>
 <br>
 	<section>
 		<footer class="footer">| Bernardo de Irigoyen 89, Punta Alta - Cnel Rosales | delapaz@delapaz.com |</footer>
